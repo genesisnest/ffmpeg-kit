@@ -3,6 +3,33 @@
 ## Notice
 FFmpegKit has been officially retired. There will be no further `ffmpeg-kit` releases.
 
+*** 
+This project is based on ffmpeg-kit (https://github.com/arthenica/ffmpeg-kit),
+licensed under the GNU Lesser General Public License v3.0 (LGPLv3).
+
+Modifications have been made to the original source code to resolve build failures by hosting dependencies locally. 
+It currently supports iOS adaptations for the ffmpeg-kit-ios-https xcframework files and Android ffmpeg-kit-https aar files(only 6.0.3ver).
+
+Previous dependency declaration (Flutter):
+```flutter
+ffmpeg_kit_flutter: 6.0.3
+```
+
+New declaration using local Git reference:
+```flutter
+ffmpeg_kit_flutter:
+  git:
+    url: https://github.com/genesisnest/ffmpeg-kit.git
+    path: flutter/flutter
+    ref: main  
+```
+
+## ⚠️ Temporary Repository Notice
+
+This repository is intended for **temporary internal use only**  
+and may be **removed or made private at any time without prior notice**.
+*** 
+
 See [Saying Goodbye to FFmpegKit @ medium](https://medium.com/@tanersener/saying-goodbye-to-ffmpegkit-33ae939767e1) to learn why we made this decision.
 
 All previously released `ffmpeg-kit` binaries will be removed according to the following schedule.
